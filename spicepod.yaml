@@ -1,0 +1,10 @@
+version: v1beta1
+kind: Spicepod
+name: tpch
+datasets:
+  - from: s3://spiceai-demo-datasets/tpch/orders/
+    name: orders
+    params:
+      file_format: parquet
+    acceleration:
+      enabled: false
